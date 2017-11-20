@@ -1,0 +1,80 @@
+\documentclass[twocolumn,a4paper,10pt]{article}
+
+\usepackage[dvips]{graphicx}
+
+% Variable enumeration
+\usepackage{enumerate}
+
+% Use all allowed space
+\addtolength{\hoffset}{-0.5cm}
+\addtolength{\textwidth}{1.0cm}
+\addtolength{\voffset}{-1.5cm}
+\addtolength{\textheight}{3cm}
+\setlength{\columnsep}{0.5cm}
+
+% Remove Abstract titile for abstract
+%\renewcommand{\abstractname}{}
+
+\author{An A. Student}
+
+\title{Home-exam/project for FYS5190/FYS9190 Supersymmetry}
+
+\begin{document}
+
+% Abstract construction for using both columns in two-column format
+\twocolumn[
+\begin{@twocolumnfalse}
+  \maketitle
+  \begin{abstract}
+This is the home-exam/project for FYS5190/FYS9190 for the fall of 2017. 
+ \end{abstract}
+  \vspace{5mm}
+\end{@twocolumnfalse}
+]
+
+\section{Instructions}
+This exam/project counts as 20\% of the final grade for the course. The point of the exam is to write a short journal style paper, for an example see~\cite{Barr:2013sla}, reviewing (so no original research necessary) a pre-agreed topic of your own choice.\footnote{Or, lacking the will to choose, by my assignment, although that would be asking for trouble.} Please start by sending me a proposed title and abstract for your paper by the end of Friday 27th of October. The topic may be any topic in supersymmetry vaguely related to the course content. I will review these by the end of the following week and possibly make suggestions for improvements.
+
+Please limit your final answers to four pages maximum using this \LaTeX--file,\footnote{Well, the \LaTeX--file that generated this {\tt pdf}--file.} and no touching the page layout please! (You are allowed to delete my text though.) Any text beyond four pages will simply be ignored. If you would like to calculate stuff --- always nice --- the following references are used a lot~\cite{Haber:1984rc,Richardson:2000nt}, although (or perhaps because)~\cite{Haber:1984rc} is a classic, it has some horribly confusing conventions.
+Please send me a {\tt pdf}--version of your answer minimum two weeks before the final exam.\footnote{No, I don't know when that will be either.\footnote{We will figure it out eventually. Also, this proves footnotes don't really work well within footnotes.}} You are free to collaborate and/or fight with your fellow students as much as you like, however, you should submit individual papers (so no co-authors). You will receive individual feed-back on the paper.  
+
+
+\section{Ipsum bacon}
+Bacon ipsum dolor amet shankle brisket pig turkey. Leberkas short ribs spare ribs jowl tail frankfurter pig pastrami pancetta shankle drumstick venison chicken prosciutto. Bresaola ham filet mignon biltong kevin salami hamburger corned beef alcatra jerky swine pig. Pancetta turducken tail meatloaf, pork chop bacon jowl meatball brisket beef ribs flank porchetta pork shoulder. Spare ribs pork loin short loin, pork belly biltong porchetta ribeye. Pork chop frankfurter shoulder chuck pork loin spare ribs flank ball tip strip steak hamburger cupim capicola tongue doner. Ham hock ham pork loin capicola prosciutto, sausage ball tip kevin t-bone porchetta.
+
+Jowl tail ribeye sirloin pig turkey. Ham flank strip steak short loin t-bone turkey chicken hamburger turducken. Venison jowl meatloaf, pork loin strip steak brisket hamburger turducken filet mignon meatball short loin t-bone capicola pastrami. Kielbasa tail landjaeger hamburger, shankle chicken doner tenderloin pork chop sirloin bacon capicola leberkas tri-tip pastrami. Prosciutto pork chop biltong jerky, swine chuck flank filet mignon chicken tail beef ribs rump pork loin. Spare ribs shankle tri-tip alcatra prosciutto.
+
+Tri-tip sirloin rump pork loin ground round pancetta flank swine. Kevin salami strip steak ham hock flank filet mignon ball tip meatloaf hamburger tenderloin meatball. Ham hock jerky brisket, shoulder shank andouille short ribs beef ribs ball tip porchetta chicken prosciutto biltong. Brisket kielbasa turducken alcatra salami tri-tip doner shoulder. Rump kevin alcatra, short ribs pork jowl pig porchetta frankfurter shank tail short loin pork chop venison.
+
+
+
+\begin{thebibliography}{9}
+
+% Please take references when possible from SPIRES
+% http://inspirehep.net/
+
+%\cite{Barr:2013sla}
+\bibitem{Barr:2013sla}
+  A.~J.~Barr and C.~G.~Lester,
+  %``A search for direct heffalon production using the ATLAS and CMS experiments at the Large Hadron Collider,''
+  arXiv:1303.7367 [hep-ph].
+  %%CITATION = ARXIV:1303.7367;%%
+  %1 citations counted in INSPIRE as of 14 Oct 2015
+
+%\cite{Haber:1984rc}
+\bibitem{Haber:1984rc}
+  H.~E.~Haber, G.~L.~Kane,
+  %``The Search for Supersymmetry: Probing Physics Beyond the Standard Model,''
+  Phys.\ Rept.\  {\bf 117 } (1985)  75-263.
+  
+%\cite{Richardson:2000nt}
+\bibitem{Richardson:2000nt}
+  P.~Richardson,
+  %``Simulations of R-parity violating SUSY models,''
+  hep-ph/0101105.
+  %%CITATION = HEP-PH/0101105;%%
+  %20 citations counted in INSPIRE as of 29 Oct 2013
+  
+\end{thebibliography}
+
+\end{document}
