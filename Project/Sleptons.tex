@@ -4,16 +4,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{graphicx,float}
-\usepackage{amssymb}
+%\usepackage{amssymb}
 \usepackage{amsmath,cancel}
-\usepackage{mathrsfs}
+%\usepackage{mathrsfs}
 \usepackage{epstopdf}
-\usepackage{subcaption}
-\usepackage{slashed}
-\usepackage{hhline}
-\usepackage[margin=1.2in]{geometry}
+%\usepackage{subcaption}
+%\usepackage{slashed}
+%\usepackage{hhline}
+%\usepackage[margin=1.2in]{geometry}
 \usepackage[hidelinks]{hyperref}
-\usepackage{wrapfig}
+%\usepackage{wrapfig}
 
 
 \hfuzz=5pt
@@ -51,39 +51,135 @@ Several searches for production of sleptons has been performed in collider exper
 
 \section{Introduction}
 
-\section{Slepton masses in the MSSM}
+The Minimal Supersymmetric Standard Model (MSSM) is the smallest possible supersymmetric 
+of the Standard Model (SM). Roughly explained the MSSM introduces one superpartner for each 
+SM particle (with some complications in the Higgs sector), and the SM particles and their 
+superpartners (often called sparticles) differ by $\frac{1}{2}$ in spin. 
+The sparticles we will focus on here are the superpartners of the SM leptons, which are scalar (i.e. 
+spin-$0$) particles called \textit{sleptons}, and we will focus mainly on the first two generations of 
+charged sleptons, i.e. selectrons ($\tilde{e}$) and smuons ($\tilde{\mu}$).  
 
-\section{Searches with LEP}
+In particle collider experiments, such as the Large Electron-Positron Collider (LEP) and the currently 
+running Large Hadron Collider (LHC), several searches for production of sleptons have been done, but 
+so far without any sign of their existence. The consequence of such "negative" searches is usually 
+that new limits are put on the masses of the relevant sparticles (or other parameters).              
 
-\section{Searches with LHC}
+In this article we will try to summarize the current status of the limits on the selectron and smuon 
+masses. However, since the MSSM is a quite complicated model with $105$ free parameters, one has to make 
+assumptions and simplifications when setting limits, and these are (of course!) somewhat different from 
+analysis to analysis. We will therefore also take a look at which assumptions are made in the different  
+analyses. But before all this, let us look at how sleptons are described in the MSSM.          
 
+\section{Sleptons in the MSSM}
+
+As mentioned in the introduction the sleptons are the scalar superpartners of the SM leptons. In the 
+SM there is an important difference between left- and right-handed chiral states, in that the 
+left-handed leptons are organized in weak isospin doublets, while the right-handed ones are singlets 
+(i.e. they do not transform under $SU(2)_L$). This mean that, when constructing a supersymmetric theory, 
+we need to introduce separate superpartners for the left- and right-handed leptons. For this reason we 
+talk about left- and right-handed sleptons ($\tilde{\ell}_L$ and $\tilde{\ell}_R$) even though they are 
+scalar particles. 
+
+This has some consequences when we are breaking SUSY. As we know, SUSY must be a broken symmetry, 
+since otherwise particles and sparticles would have equal masses, meaning that SUSY would have been 
+discovered a long time ago. For the first two generations of (charged) sleptons (neglecting the 
+Yukawa coupling) the mass is given as
+\begin{align}
+m_{\tilde{\ell}}^2 = m_{\ell}^2 + (T_3 - Q\sin^2\theta_W)\cos 2\beta m_Z^2, 
+\end{align}  
+where $m_{\ell}$ is the  mass of the corresponding SM lepton, $T_3$ is weak isospin, $Q$ is 
+electric charge, $\theta_W$ is the Weinberg angle, $\beta$ is given by the ration between the 
+vacuum expectation values of the two Higgs doublets of the MSSM, and $m_Z$ is the mass of the $Z$-boson.
+Interesting to notice is that $m_{\tilde{\ell}}$ depends on weak isospin, which is different for 
+$\tilde{\ell}_L$ ($T_3 = -1/2$) and $\tilde{\ell}_R$ ($T_3 = 0$), meaning that their masses are 
+different. The mass difference is given by 
+\begin{align}
+m_{\tilde{\ell}_L}^2 - m_{\tilde{\ell}_R}^2 = -\frac{1}{2}\cos 2\beta m_Z^2.  
+\end{align}  
+By convention we have $0 < \beta < \frac{\pi}{2}$, and it is (apparently, check this!) in the MSSM a 
+common assumption that $\tan\beta > 1$, meaning that $\cos 2\beta < 0$, so 
+\begin{align*}
+m_{\tilde{\ell}_L}^2 > m_{\tilde{\ell}_R}^2. 
+\end{align*} 
+
+\section{Slepton production in particle colliders}
+
+The MSSM is usually defined as conserving R-parity, given as  
+\begin{align*}
+R = (-1)^{2s + 3B + L}, 
+\end{align*}
+where $s$ is spin, $B$ is baryon number and $L$ is lepton number. This has the 
+interesting consequences that sparticles will always be produced in pairs in particle colliders, 
+the lightest sparticle (LSP) will be stable, and all other sparticles will (possibly via multiple steps) 
+decay to the LSP. Conservation of R-parity (and some other quantum numbers) means that slepton searches 
+target production of $\tilde{\ell}^+\tilde{\ell}^-$, and it is a very common assumption that the LSP is 
+the lightest neutralino, $\tilde{\chi}_1^0$, which is an excellent candidate particle for dark matter. 
+Often sleptons are assumed to decay directly to $\tilde{\chi}_1^0$, plus the corresponding SM lepton. 
+The mass difference, 
+\begin{align}
+\Delta m = m_{\tilde{\ell}} - m_{\tilde{\chi}^0_1}, 
+\label{eq:delta m}
+\end{align}  
+is in this case quite important, since it basically determines the momentum of the lepton, which is 
+what you observe in the detector. Scenarios with small $\Delta m$ is in some experiments hard to study. 
+
+In hadron colliders, such as the LHC, the cross section for slepton production is expected to be 
+quite small, since the production of coloured (s)particles should be dominant in such machines. 
+However, if coloured sparticles are sufficiently heavy, production of sleptons (and other electroweak 
+sparticles) could be the leading SUSY production channel. At leading order a pair of sleptons can be 
+produced through $q\bar{q}$ annihilation to a virtual $Z/\gamma$, which splits into 
+$\tilde{\ell}^+\tilde{\ell}^-$ ($s$-channel). In lepton colliders there is a similar $s$-channel, only 
+with $e^+e^-$ annihilation, but in addition there is also a $t$-channel with neutralino exchange 
+available at leading order.  
+
+\section{Slepton mass limits}
+
+Now that we have introduced some theory and phenomenology concerning sleptons it is time to move into 
+the more experimental details. We will mainly focus on searches done at LEP and the LHC, as the best 
+current limits stems from these experiments. We will take a look at what the actual limits are, and 
+which assumptions that are made in the various searches.    
+
+\subsection{LEP}
+
+The Large Electron-Positron collider (LEP) was a $27$ km $e^+e^-$ collider at CERN running between 
+$1989$ and $2000$, and is still the most powerful lepton collider ever built, with a peak energy of 
+$209$ GeV. Although this is much less than the energy at which the LHC collides protons, and the 
+total delivered luminosity is much smaller than in the LHC, it is interesting to notice that the 
+LEP experiments still has the most general limits on the masses of both selectrons and smuons.  
+
+An absolute lower limit on the selectron masses, $m_{\tilde{e}_L}$ and $m_{\tilde{e}_R}$,  within the 
+MSSM is set by the ALEPH experiment in ref. \cite{ALEPH:2002} to be  
+\begin{align*}
+m_{\tilde{e}_R} & > 73 \:\: \text{GeV}, \\
+m_{\tilde{e}_L} & > 107 \:\: \text{GeV},   
+\end{align*}       
+assuming R-parity conservation, and that $\tilde{\chi}_1^0$ is the LSP. It is also assumed that 
+scalar masses and gaugino masses are unified to $m_0$ and $m_{1/2}$ respectively at GUT scale, and 
+that $\tan\beta > 1$, as mentioned previously. Finally, mixing between $\tilde{e}_L$ and $\tilde{e}_R$ 
+is neglected. It is however noteworthy that these limits are for \textit{any} $\Delta m$ (see eq. 
+\ref{eq:delta m}). 
+
+
+
+\subsection{LHC}
+
+\section{Simplified models vs the MSSM}
+
+\section{Conclusions}
 
 \begin{thebibliography}{9}
 
 % Please take references when possible from SPIRES
 % http://inspirehep.net/
 
-%\cite{Barr:2013sla}
-\bibitem{Barr:2013sla}
-  A.~J.~Barr and C.~G.~Lester,
-  %``A search for direct heffalon production using the ATLAS and CMS experiments at the Large Hadron Collider,''
-  arXiv:1303.7367 [hep-ph].
-  %%CITATION = ARXIV:1303.7367;%%
-  %1 citations counted in INSPIRE as of 14 Oct 2015
+\bibitem{ALEPH:2002}
+  A. Heister et al. (2002), Phys.Lett. B544, 73-88. 
+  \href{https://inspirehep.net/record/591226}{https://inspirehep.net/record/591226}
+ 
+\bibitem{DELPHI:2003} 
+  J. Abdallah et al. (2003), Eur.Phys.J.C31, 421-479. 
+  \href{http://inspirehep.net/record/632738}{http://inspirehep.net/record/632738}	
 
-%\cite{Haber:1984rc}
-\bibitem{Haber:1984rc}
-  H.~E.~Haber, G.~L.~Kane,
-  %``The Search for Supersymmetry: Probing Physics Beyond the Standard Model,''
-  Phys.\ Rept.\  {\bf 117 } (1985)  75-263.
-  
-%\cite{Richardson:2000nt}
-\bibitem{Richardson:2000nt}
-  P.~Richardson,
-  %``Simulations of R-parity violating SUSY models,''
-  hep-ph/0101105.
-  %%CITATION = HEP-PH/0101105;%%
-  %20 citations counted in INSPIRE as of 29 Oct 2013
   
 \end{thebibliography}
 
