@@ -4,9 +4,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{graphicx,float}
-%\usepackage{amssymb}
+\usepackage{amssymb}
 \usepackage{amsmath,cancel}
-%\usepackage{mathrsfs}
+\usepackage{mathrsfs}
 \usepackage{epstopdf}
 %\usepackage{subcaption}
 %\usepackage{slashed}
@@ -101,6 +101,38 @@ common assumption that $\tan\beta > 1$, meaning that $\cos 2\beta < 0$, so
 \begin{align*}
 m_{\tilde{\ell}_L}^2 > m_{\tilde{\ell}_R}^2. 
 \end{align*} 
+This mass splitting is however usually assumed to be small, and in experiments $\tilde{\ell}_R$ and 
+$\tilde{\ell}_L$ are often (but not always) assumed to be mass degenerate. 
+
+\section{Constrained models}
+
+As mentioned in the introduction the MSSM has $105$ free parameters (plus the $19$ free parameters 
+of the SM), which makes it somewhat difficult to use for phenomenological predictions and interpretation 
+of experimental data. For this reason we need to consider constrained models, where the number of 
+free parameters is drastically reduced. We will not go into much details here, but simply mention a 
+few of the most popular once, which are also the most relevant for the analyses discussed later.  
+This review is mainly based on ref. \cite{Simplified models}. 
+
+The first model we should mention is a very popular one known as minimal supergravity (mSUGRA) or 
+constrained MSSM (CMSSM). This model provides a mechanism for explaining SUSY breaking through 
+gravitational interactions at Planck scale, and at GUT scale the model only depends on five free 
+parameters,  
+\begin{align*}
+m_{1/2},\:\: m_0, \:\: A_0, \:\: \tan\beta \:\:\text{and}\:\: \text{sgn}(\mu), 
+\end{align*}
+where $m_{1/2}$ is a common gaugino mass, $m_0$ is a common scalar mass, $A_0$ is a universal tri-linear 
+Yukawa coupling, $\tan\beta$ is the ratio between the vacuum expectation values for the two Higgs 
+doublets of the MSSM and sgn$(\mu)$ is the sign of the Higgs mass parameter. The MSSM parameters at 
+electroweak scale are obtained by the renormalization group equation.      
+
+Another model we should mention is the phenomenological MSSM (pMSSM), which is a way of limiting the 
+MSSM parameter space by including three assumptions; \textit{i)} No new sources of CP-violation, 
+\textit{ii)} no flavour changing neutral currents, \textit{iii)} first and second generation universality. 
+The last assumption implies that the masses of first and second generation sfermions are equal. With 
+these assumptions the number of free parameters is reduced to $19$.  
+
+Finally we should mention that for instance in recent searches by ATLAS (e.g. ref. \cite{ATLAS:2017}) 
+so-called simplified models are used when interpreting the results. 
 
 \section{Slepton production in particle colliders}
 
@@ -124,7 +156,8 @@ is in this case quite important, since it basically determines the momentum of t
 what you observe in the detector. Scenarios with small $\Delta m$ is in some experiments hard to study. 
 
 In hadron colliders, such as the LHC, the cross section for slepton production is expected to be 
-quite small, since the production of coloured (s)particles should be dominant in such machines. 
+quite small, since the production of coloured (s)particles should be dominant, since hadrons (protons) 
+are strongly interacting particles. 
 However, if coloured sparticles are sufficiently heavy, production of sleptons (and other electroweak 
 sparticles) could be the leading SUSY production channel. At leading order a pair of sleptons can be 
 produced through $q\bar{q}$ annihilation to a virtual $Z/\gamma$, which splits into 
@@ -159,18 +192,99 @@ that $\tan\beta > 1$, as mentioned previously. Finally, mixing between $\tilde{e
 is neglected. It is however noteworthy that these limits are for \textit{any} $\Delta m$ (see eq. 
 \ref{eq:delta m}). 
 
-
+A limit on the smuon mass, $m_{\tilde{\mu}}$, was also set at LEP by the DELPHI experiment 
+\cite{DELPHI:2003}. In this analysis it was assumed that only right-handed smuons would be light enough 
+to be produced in LEP, so the limit only applies to $\tilde{\mu}_R$'s, and is given as 
+\begin{align*}
+m_{\tilde{\mu}_R} > 94 \:\: \text{GeV}, 
+\end{align*}
+interpreted in the CMSSM, for $1<\tan\beta <40$, $-1000\:\text{GeV} \leq \mu \leq 1000 \: \text{GeV}$, 
+and assuming no mass splitting in the third generation of sfermions. (The last assumption is done because 
+this gives the most conservative limit.) The limit applies to scenarios with  
+$\Delta m > 10$ GeV.  Notice that, although the limit is for to right-handed smuons, since 
+$m_{\tilde{\mu}_L}>m_{\tilde{\mu}_R}$, it also serves as a conservative limit on $m_{\tilde{\mu}_L}$. 
+The same analysis (ref. \cite{DELPHI:2003}) also presents a mass limit on $\tilde{e}_R$ at $94$ GeV, 
+which is higher than the one discussed previously by ALEPH. However, the DELPHI-analysis requires 
+$\Delta m > 10$ GeV, so the ALEPH limit is still the most general one on $m_{\tilde{e}_R}$.   
 
 \subsection{LHC}
 
-\section{Simplified models vs the MSSM}
+The Large Hadron Collider (LHC) at CERN is the most powerful particle collider ever built. It  
+spends most of its operational time accelerating and colliding protons, first in Run I ($2010$-$2012$) 
+at $7$-$8$ TeV, and now in Run II (since $2015$) at $13$ TeV. With such a powerful accelerator a lot 
+of people expected that the discovery of SUSY was just around the corner, but despite great efforts 
+and plenty of searches no significant deviations from the Standard Model has been seen.
 
-\section{Conclusions}
+Searches for slepton production has been done by both ATLAS and CMS, which are the two multi-purpose 
+experiments at the LHC. We will however stick to discussing results from the ATLAS experiment, because 
+only ATLAS has set limits on the slepton mass using $13$ TeV data, while the limits from $8$ TeV analyses 
+are quite similar for the two experiments. 
+
+Two ATLAS analyses searching for slepton production is found in refs. \cite{ATLAS:2014} ($8$ TeV) and 
+\cite{ATLAS:2017} ($13$ TeV). The limits in the latter are (much) stronger, but somewhat different 
+models are used in the searches, which is why we should mention both of them.
+
+In the $8$ TeV analysis results are interpreted in a pMSSM framework. It is (as usual) assumed that 
+the lightest neutralino is the LSP, and also that the slepton is the next-to-lightest sparticle (NLSP) 
+(i.e. it always decays as $\tilde{\ell}\rightarrow \tilde{\chi}_1^0 \ell$). The resulting exclusion 
+limits for mass degenerate left- and right-handed sleptons is shown in Figure \ref{fig:ATLAS 8TeV}, 
+with $m_{\tilde{\ell}}$ on the $x$-axis and $m_{\tilde{\chi}_1^0}$ on the $y$-axis.  
+(Ref. \cite{ATLAS:2014} also contains separate limits for $\tilde{\ell}_L$ and $\tilde{\ell}_R$.)   
+The red line marks the area excluded in this search, while the orange area is the limit from 
+LEP on the $\tilde{\mu}_R$ mass. We see that excluded are has been quite significantly extended, but 
+(as mentioned) the ATLAS search do not reach the smaller $\Delta m$'s.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.1]{Run1exclusion.png}
+\caption{Exclusion limits on mass degenerate left- and right-handed sleptons from ATLAS at 
+$8$ TeV \cite{ATLAS:2014}.}
+\label{fig:ATLAS 8TeV}
+\end{center}
+\end{figure}  
+
+Much of the same can also be said about the limits at $13$ TeV, shown in Figure \ref{fig:ATLAS 13TeV}, 
+which were presented at the LHCP conference in May 2017. The green area is the previous limit at $8$ 
+TeV, while the red on is the new observed limit. For this search a so-called simplified model is used, 
+where the only free parameters are $m_{\tilde{\ell}}$ and $m_{\tilde{\chi}_1^0}$. It is noteworthy 
+that, although the limits are extended by quite a bit, the limits in the compressed region (meaning 
+small $\Delta m$) aren't improved at all compared to the $8$ TeV search.        
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{Run2exclusion_new.png}
+\caption{Exclusion limits on mass degenerate left- and right-handed sleptons from ATLAS at $13$ TeV 
+\cite{ATLAS:2017}.}
+\label{fig:ATLAS 13TeV}
+\end{center}
+\end{figure}
+
+One might wonder why LEP, after all these years, still has better limits than the LHC experiments in the 
+compressed region, and there is a very specific reason for this. ATLAS (and CMS) are primarily designed 
+to search for new (heavy) particles. Such particles should, when decaying, lead to final state particles 
+with high transverse momentum ($p_T$). The ATLAS detector is therefore designed to only keep events where 
+such particles are present, and the trigger system \cite{ATLAS triggers} in ATLAS is really efficient 
+only for leptons with $p_T \gtrsim 20$ GeV. Scenarios with low $\Delta m$ will typically lead to final 
+states with so-called \textit{soft} leptons (i.e. low $p_T$), which are hard to study with ATLAS, hence 
+sensitivities to such scenarios are low. 
+
+However, a study done in ref. \cite{Compressed sleptons} shows that the LHC at $14$ TeV with $100$ 
+fb$^{-1}$ of data could be sensitive to $\Delta m$'s as low as $3$ GeV up to 
+$m_{\tilde{\ell}_L} \approx 150$ GeV. This study does however not make use of the traditional 
+technique of studying final states with $\ell^+ \ell^-$ and MET, but makes use of events with 
+energetic jets from initial state radiation (ISR). The idea is that the produced sleptons will recoil 
+against these jets, leading to leptons with high $p_T$ also in low $\Delta m$ scenarios.        
+
+\section{Summary and conclusions}
 
 \begin{thebibliography}{9}
 
 % Please take references when possible from SPIRES
 % http://inspirehep.net/
+
+\bibitem{Simplified models} 
+  A. Djouadi et al. (1999). \\
+  \href{https://arxiv.org/abs/hep-ph/9901246}{https://arxiv.org/abs/hep-ph/9901246}
 
 \bibitem{ALEPH:2002}
   A. Heister et al. (2002), Phys.Lett. B544, 73-88. 
@@ -180,7 +294,22 @@ is neglected. It is however noteworthy that these limits are for \textit{any} $\
   J. Abdallah et al. (2003), Eur.Phys.J.C31, 421-479. 
   \href{http://inspirehep.net/record/632738}{http://inspirehep.net/record/632738}	
 
-  
+\bibitem{ATLAS:2014} 
+  G. Aad et al. (2014), JHEP 1405 071. \\
+  \href{https://inspirehep.net/record/1286761}{https://inspirehep.net/record/1286761}
+
+\bibitem{ATLAS:2017} 
+  ATLAS Collaboration (2017), CONF-SUSY-2017-039. 
+  \href{http://cds.cern.ch/record/2267406}{http://cds.cern.ch/record/2267406}      
+
+\bibitem{ATLAS triggers}
+  ATLAS Collaboration (2016). \\
+  \href{https://arxiv.org/abs/1611.09661}{https://arxiv.org/abs/1611.09661}   
+
+\bibitem{Compressed sleptons}
+  A. Barr, J. Scoville (2015). \\ 
+  \href{https://arxiv.org/abs/1501.02511}{https://arxiv.org/abs/1501.02511}
+ 
 \end{thebibliography}
 
 \end{document}
